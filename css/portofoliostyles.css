@@ -262,6 +262,7 @@ body {
     display: inline-flex;
     margin-left: auto;
     gap: 40px;
+    align-items: center;
 }
 
 .button {
@@ -529,17 +530,18 @@ body {
 .regular-customers-list {
     display: flex;
     padding-inline-start: 0px;
+    margin-block-start: 0px;
     margin-block-end: 0px;
     justify-content: space-between;
 }
 
 
 .regular-customers-list :hover {
-    border: 1px solid var(--brand-blue);
+    border-color: var(--brand-blue);
+    border-radius: 4px;
     cursor: pointer;
     fill: var(--brand-blue);
 }
-
 
 .regular-item-icon>svg {
     display: flex;
