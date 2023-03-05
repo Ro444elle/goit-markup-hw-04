@@ -458,15 +458,14 @@ body {
     justify-content: center;
 }
 
-
-.social-list li:hover {
+.team-icon-item:hover {
     background-color: var(--brand-blue);
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.team-social-icon:hover {
+.team-icon-item:hover svg {
     fill: #FFFFFF;
-    cursor: pointer;
 }
 
 .team-social-icon {
@@ -480,7 +479,6 @@ body {
     width: 44px;
     height: 44px;
     background: #FFFFFF;
-    border-radius: 50%;
 }
 
 .social-media-icons {
@@ -491,7 +489,6 @@ body {
 .portofolio-card:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 .portofolio-card {
     box-sizing: border-box;
@@ -634,4 +631,5 @@ body {
 
 .social-footer-list li:hover {
     background-color: var(--brand-blue);
+    cursor: pointer;
 }
