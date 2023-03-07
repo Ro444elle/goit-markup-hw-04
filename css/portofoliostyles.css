@@ -15,7 +15,7 @@ body {
 }
 
 /* Global*/
-:root {
+* {
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
@@ -24,8 +24,7 @@ body {
 }
 
 .bg-gray {
-    background-color: var(--brand-bb-grey);
-    background-image: url(../images/background-studio.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-studio.jpg);
 }
 
 .header-section,
@@ -47,9 +46,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 35px;
-    padding-inline-start: 0px;
+    /* padding-inline-start: 0px;
     margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-block-end: 0px; */
 }
 
 .section {
@@ -72,11 +71,6 @@ body {
 
 .contact-icon {
     fill: var(--brand-grey);
-}
-
-.contact-icon:hover {
-    fill: var(--brand-blue);
-    cursor: pointer;
 }
 
 .header-section {
@@ -243,26 +237,31 @@ body {
     text-decoration: none;
 }
 
-.link:hover {
-    color: var(--brand-blue);
+.header-contacts {
+    display: inline-flex;
+    margin-left: auto;
+    gap: 40px;
+    align-items: center;
 }
 
-.link:focus {
-    color: var(--brand-blue);
-}
-
-.header-contacts a {
+.header-contacts .link {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--brand-grey);
 }
 
-.header-contacts {
-    display: inline-flex;
-    margin-left: auto;
-    gap: 40px;
-    align-items: center;
+.header-contacts li .link svg {
+    margin-right: 10px;
+}
+
+.header-contacts li .link:hover {
+    color: var(--brand-blue);
+    cursor: pointer;
+}
+
+.header-contacts li .link:hover svg {
+    fill: var(--brand-blue);
 }
 
 .button {
@@ -486,10 +485,6 @@ body {
     justify-content: center;
 }
 
-.portofolio-card:hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 .portofolio-card {
     box-sizing: border-box;
     width: 370px;
@@ -498,12 +493,19 @@ body {
     border: 1px solid #EEEEEE;
 }
 
+.portofolio-card:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 .portofolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-left: 24px;
+    margin-top: 20px;
+    margin-right: 24px;
 }
 
 .portofolio-description {
@@ -511,7 +513,7 @@ body {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    margin: 24px;
+    margin: 0 24px 20px 24px;
 }
 
 .customers-title {
