@@ -389,6 +389,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--brand-black);
     padding-bottom: 50px;
+    padding-top: 94px
 }
 
 .image-description-section {
