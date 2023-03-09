@@ -62,6 +62,23 @@ body {
     margin-left: 93px
 }
 
+.navigation-studio:hover {
+    color: var(--brand-blue);
+    cursor: pointer;
+}
+
+.navigation-portofolio:hover {
+    color: var(--brand-blue);
+}
+
+.navigation-contacts:hover {
+    color: var(--brand-blue);
+}
+
+.nav-portofolio:hover {
+    color: var(--brand-blue);
+}
+
 .nav-handler {
     display: flex;
     align-items: center;
@@ -211,6 +228,7 @@ body {
     color: var(--brand-blue)
 }
 
+
 .header-second-item {
     color: var(--brand-grey)
 }
@@ -228,7 +246,7 @@ body {
 
 .nav-portofolio {
     margin-right: 50px;
-    color: var(--brand-blue)
+    color: var(--brand-black)
 }
 
 .unstyled-list {
@@ -432,6 +450,7 @@ body {
     top: 1635px;
     /* background: url(.jpg); */
     border-radius: 0px;
+    margin-bottom: 30px;
 }
 
 .team-card {
@@ -449,6 +468,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-black);
+    margin-bottom: 10px;
 }
 
 .team-card-text {
@@ -492,6 +512,7 @@ body {
 .social-media-icons {
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .portofolio-card {
